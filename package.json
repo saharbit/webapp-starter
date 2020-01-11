@@ -7,6 +7,10 @@
   "scripts": {
     "start:client": "cd client && yarn start",
     "start:server": "cd server && yarn start:dev",
-    "start:dev": "concurrently \"yarn start:client\" \"yarn start:server\""
+    "start:dev": "concurrently \"yarn start:client\" \"yarn start:server\"",
+    "prettier": "prettier --write '**/*.{tsx,jsx,ts,js}'"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
   }
 }
